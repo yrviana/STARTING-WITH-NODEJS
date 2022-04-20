@@ -1,0 +1,30 @@
+// Cadastrar Item
+POST http://localhost:4002/products
+Content-Type: application/json
+
+{
+    "name": "Banner",
+    "price": 59.99
+}
+
+###
+// Imprimir todos os itens
+GET http://localhost:4002/products
+
+###
+// Buscar item por ID
+GET http://localhost:4002/products/
+
+###
+// Alterar Item por ID
+PUT http://localhost:4002/products/be2026dd-f28e-4713-a817-94d34e9e9f87
+Content-Type: application/json
+
+{
+    "name": "Painel Redondo",
+    "price": 34.99
+}
+
+###
+// Deletar item por ID
+DELETE http://localhost:4002/products/67883893-bc56-4335-a0b9-a709d3692373
